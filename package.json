@@ -2,11 +2,11 @@
   "name": "ecommerce-app",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "build": "vite build",
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build"
   },
+  "type": "module",
   "dependencies": {
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
