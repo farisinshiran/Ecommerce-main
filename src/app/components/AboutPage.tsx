@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { MapPin, Phone, Clock, Leaf, Award, Users, Star, Heart, Instagram } from "lucide-react";
-import storeLogoImg from "../../assets/logo.png";
+import storeLogoImg from "@/assets/bg.png";
 
 const plantationImg = "https://images.unsplash.com/photo-1719406287028-6e0028e5d12a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200";
 
@@ -106,7 +106,7 @@ export function AboutPage() {
             className="mb-6"
             style={{ fontFamily: "'Playfair Display', serif", color: "#41431B", fontSize: "1.8rem", fontWeight: 700 }}
           >
-            Kisah Kami https://i.pinimg.com/1200x/45/06/16/450616b61655fd61d39d227434d03e90.jpg
+            Kisah Kami
           </h2>
           <div
             className="rounded-3xl p-7 md:p-10 shadow-sm border"
@@ -267,6 +267,24 @@ export function AboutPage() {
               ))}
             </div>
             <div className="space-y-5">
+              <div
+                className="rounded-2xl p-5"
+                style={{ backgroundColor: "rgba(174,183,132,0.15)", border: "1px solid rgba(174,183,132,0.2)" }}
+              >
+                <div className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: "#AEB784" }}>
+                  Chat langsung
+                </div>
+                <a
+                  href="https://wa.me/6281321245161"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-3 rounded-xl font-semibold flex items-center justify-center gap-2 text-sm transition-opacity hover:opacity-90"
+                  style={{ backgroundColor: "#25D366", color: "white" }}
+                >
+                  💬 Chat WhatsApp Sekarang
+                </a>
+              </div>
+
               <div className="flex items-start gap-3">
                 <div
                   className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"
@@ -292,29 +310,35 @@ export function AboutPage() {
                 <div>
                   <div className="text-xs font-semibold mb-2" style={{ color: "#AEB784" }}>Platform Pengiriman</div>
                   <div className="flex gap-2 flex-wrap">
-                    <span className="text-xs font-semibold px-3 py-1.5 rounded-full text-white" style={{ backgroundColor: "#1A5231" }}>GoFood</span>
-                    <span className="text-xs font-semibold px-3 py-1.5 rounded-full text-white" style={{ backgroundColor: "#52B788" }}>GrabFood</span>
-                    <span className="text-xs font-semibold px-3 py-1.5 rounded-full text-white" style={{ backgroundColor: "#F97316" }}>ShopeeFood</span>
+                    <a
+                      href="https://gofood.link/a/xUWXgHJ"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs font-semibold px-3 py-1.5 rounded-full text-white transition-opacity hover:opacity-80"
+                      style={{ backgroundColor: "#1A5231" }}
+                    >
+                      GoFood
+                    </a>
+                    <a
+                      href="https://r.grab.com/g/6-20260331_225106_9430f67a73d34702a28595e2962b3c84_MEXMPS-6-CZM1JCNAJEU2JN"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs font-semibold px-3 py-1.5 rounded-full text-white transition-opacity hover:opacity-80"
+                      style={{ backgroundColor: "#52B788" }}
+                    >
+                      GrabFood
+                    </a>
+                    <a
+                      href="https://shopee.co.id/universal-link/now-food/shop/1121744?deep_and_deferred=1&shareChannel=copy_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs font-semibold px-3 py-1.5 rounded-full text-white transition-opacity hover:opacity-80"
+                      style={{ backgroundColor: "#F97316" }}
+                    >
+                      ShopeeFood
+                    </a>
                   </div>
                 </div>
-              </div>
-
-              <div
-                className="rounded-2xl p-5 mt-2"
-                style={{ backgroundColor: "rgba(174,183,132,0.15)", border: "1px solid rgba(174,183,132,0.2)" }}
-              >
-                <div className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: "#AEB784" }}>
-                  Chat langsung
-                </div>
-                <a
-                  href="https://wa.me/6281321245161"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full py-3 rounded-xl font-semibold flex items-center justify-center gap-2 text-sm transition-opacity hover:opacity-90"
-                  style={{ backgroundColor: "#25D366", color: "white" }}
-                >
-                  💬 Chat WhatsApp Sekarang
-                </a>
               </div>
             </div>
           </div>

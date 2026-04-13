@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { X, Heart, MessageCircle, Share2, Bookmark, MoreHorizontal, Grid, List } from "lucide-react";
-
-const coconutDrinkImg = "https://images.unsplash.com/photo-1722460228785-733ae3a0e8c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800";
+import { X, Heart, Share2, Bookmark, MoreHorizontal, Grid, List } from "lucide-react";
+import { WhatsAppIcon } from "./ui/whatsapp-icon";
+import coconutDrinkImg from "@/assets/bg.png";
 const drinkImg = "https://images.unsplash.com/photo-1765827620772-3129b91847b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800";
 const marketImg = "https://images.unsplash.com/photo-1539672663019-14678deb71f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800";
 const plantationImg = "https://images.unsplash.com/photo-1719406287028-6e0028e5d12a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800";
@@ -215,7 +215,7 @@ export function GalleryPage() {
                       <span className="text-sm font-semibold">{post.likes.toLocaleString()}</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                      <MessageCircle size={18} fill="white" />
+                      <WhatsAppIcon size={18} fill="white" />
                       <span className="text-sm font-semibold">{post.comments}</span>
                     </div>
                   </div>
@@ -278,7 +278,7 @@ export function GalleryPage() {
                         <span className="text-sm font-semibold">{post.likes.toLocaleString()}</span>
                       </button>
                       <button className="flex items-center gap-1.5 transition-colors" style={{ color: "#8A8A6A" }}>
-                        <MessageCircle size={20} />
+                        <WhatsAppIcon size={20} />
                         <span className="text-sm font-semibold">{post.comments}</span>
                       </button>
                       <button className="transition-colors" style={{ color: "#8A8A6A" }}>
@@ -378,7 +378,7 @@ export function GalleryPage() {
                         <span className="text-sm font-semibold">{selectedPost.likes.toLocaleString()}</span>
                       </button>
                       <div className="flex items-center gap-1.5" style={{ color: "#8A8A6A" }}>
-                        <MessageCircle size={20} />
+                        <WhatsAppIcon size={20} />
                         <span className="text-sm font-semibold">{selectedPost.comments}</span>
                       </div>
                     </div>

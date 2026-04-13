@@ -8,11 +8,11 @@ import {
   ExternalLink,
   ArrowLeft,
   CheckCircle,
-  MessageCircle,
   Truck,
   UtensilsCrossed,
   Package,
 } from "lucide-react";
+import { WhatsAppIcon } from "./ui/whatsapp-icon";
 import { useStore } from "./store-context";
 import { useNavigate } from "react-router";
 
@@ -35,7 +35,7 @@ const deliveryApps = [
     name: "ShopeeFood",
     bgColor: "#F97316",
     emoji: "https://i.pinimg.com/736x/66/1e/6c/661e6c8bb4e133784af3df07fba161c4.jpg",
-    url: "#",
+    url: "https://shopee.co.id/universal-link/now-food/shop/1121744?deep_and_deferred=1&shareChannel=copy_link",
     desc: "Pesan via ShopeeFood",
   },
 ];
@@ -470,7 +470,7 @@ export function CartPage() {
                 className="w-full py-4 rounded-2xl font-semibold flex items-center justify-center gap-2 transition-opacity hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed text-white"
                 style={{ backgroundColor: "#25D366" }}
               >
-                <MessageCircle size={18} />
+                <WhatsAppIcon size={18} fill="white" />
                 Pesan via WhatsApp
                 <span
                   className="ml-1 text-xs px-2 py-0.5 rounded-full font-semibold"

@@ -5,10 +5,10 @@ import {
   Star,
   MapPin,
   Phone,
-  MessageCircle,
   CheckCircle,
   ChevronRight,
 } from "lucide-react";
+import { WhatsAppIcon } from "./ui/whatsapp-icon";
 import { useState } from "react";
 
 const deliveryApps = [
@@ -66,7 +66,7 @@ const deliveryApps = [
     bgColor: "#F97316",
     textAccent: "#EA580C",
     pillBg: "rgba(249,115,22,0.1)",
-    url: "https://shopee.co.id",
+    url: "https://shopee.co.id/universal-link/now-food/shop/1121744?deep_and_deferred=1&shareChannel=copy_link",
     username: "kelapahijaubandung01",
     deliveryTime: "20–40 menit",
     minOrder: "Rp 20.000",
@@ -241,12 +241,9 @@ export function OrderPage() {
           className="mt-10 rounded-3xl p-7 md:p-10 border flex flex-col md:flex-row items-center gap-7"
           style={{ backgroundColor: "white", borderColor: "#E3DBBB" }}
         >
-          <div
-            className="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0"
-            style={{ backgroundColor: "#25D366" }}
-          >
-            <MessageCircle size={28} className="text-white" />
-          </div>
+            <div className="shrink-0">
+              <WhatsAppIcon size={49} fill="#25D366" item-center />
+            </div>
           <div className="flex-1 text-center md:text-left">
             <h3
               className="mb-2"
@@ -269,7 +266,7 @@ export function OrderPage() {
             className="px-7 py-3 rounded-full font-semibold flex items-center gap-2 text-white shrink-0 transition-opacity hover:opacity-90"
             style={{ backgroundColor: "#25D366" }}
           >
-            <MessageCircle size={18} />
+            <WhatsAppIcon size={18} fill="white" />
             Chat WhatsApp
           </a>
         </motion.div>

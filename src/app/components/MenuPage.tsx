@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router";
 import { motion, AnimatePresence } from "motion/react";
 import { ShoppingCart, Star, Plus, Check, Search, Filter, Tag } from "lucide-react";
 import { useStore, Product } from "./store-context";
@@ -244,6 +245,7 @@ export function MenuPage() {
   const [activeCategory, setActiveCategory] = useState("semua");
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState("default");
+  const navigate = useNavigate();
   const { cart } = useStore();
   const totalInCart = cart.reduce((s, i) => s + i.quantity, 0);
 
@@ -370,9 +372,9 @@ export function MenuPage() {
             animate={{ y: 0, opacity: 1 }}
             className="fixed bottom-6 left-0 right-0 flex justify-center z-40 px-4"
           >
-            <a
-              href="/keranjang"
-              className="text-white px-8 py-4 rounded-2xl shadow-2xl flex items-center gap-3 transition-opacity hover:opacity-90"
+            <button
+              onClick={() => navigate("/keranjang")}
+              className="text-white px-8 py-4 rounded-2xl shadow-2xl flex items-center gap-3 transition-opacity hover:opacity-90 border-none cursor-pointer"
               style={{ backgroundColor: "#41431B" }}
             >
               <ShoppingCart size={20} />
@@ -383,7 +385,7 @@ export function MenuPage() {
               >
                 Lihat →
               </span>
-            </a>
+            </button>
           </motion.div>
         )}
       </div>
