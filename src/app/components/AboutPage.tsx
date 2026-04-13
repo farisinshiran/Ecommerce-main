@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { MapPin, Phone, Clock, Leaf, Award, Users, Star, Heart, Instagram } from "lucide-react";
-import storeLogoImg from "@/assets/bg.png";
 
+const storeLogoImg = "/bg.png";
 const plantationImg = "https://images.unsplash.com/photo-1719406287028-6e0028e5d12a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200";
 
 const milestones = [

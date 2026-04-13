@@ -15,8 +15,8 @@ import {
 } from "lucide-react";
 import { WhatsAppIcon } from "./ui/whatsapp-icon";
 
-import storeLogoImg from "@/assets/bg.png";
-import heroImg from "@/assets/bg.png";
+const storeLogoImg = "/bg.png";
+const heroImg = "/bg.png";
 
 const highlight1 = [
   { label: "Kiriman", value: "366+", icon: Package },
@@ -245,7 +245,6 @@ export function HomePage() {
               {/* Action Buttons */}
               <div className="flex flex-wrap gap-2 w-full md:flex-col md:w-auto md:gap-2.5">
                 <button
-
                   onClick={() => window.open("https://www.instagram.com/kelapahijaubandung01/", "_blank")}  
                   className="flex-1 min-w-[100px] md:flex-none md:w-full px-3 md:px-4 py-2.5 md:py-3 rounded-lg md:rounded-xl text-xs md:text-sm font-semibold flex items-center justify-center gap-2 transition-all hover:shadow-lg active:scale-95"
                 style={{ 
@@ -263,6 +262,7 @@ export function HomePage() {
                 onMouseLeave={(e) => {
                   e.currentTarget.style.boxShadow = "0 8px 16px rgba(225,64,95,0.25), 0 4px 8px rgba(0,0,0,0.1), inset 0 -1px 0 rgba(0,0,0,0.05)";
                   e.currentTarget.style.transform = "translateY(0)";}}
+                  title="Follow di Instagram"
                 >
                  <Instagram size={16} /> <span className="hidden sm:inline">Instagram</span>
                 </button>
@@ -306,7 +306,7 @@ export function HomePage() {
 
 
       {/* TIKTOK Section */}
-      <section className="max-w-7xl mx-auto px-4 py-0">
+      <section className="max-w-7xl mx-auto px-4 py-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -416,7 +416,7 @@ export function HomePage() {
                   }}
                   title="Follow di TikTok"
                 >
-                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                 <svg width="16" height="16" viewBox="0 0 23 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.1 1.82 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.05-.05Z"/>
                  </svg>
                  <span className="hidden sm:inline">TikTok</span>
@@ -480,7 +480,7 @@ export function HomePage() {
                   width="100%"
                   height="400"
                   style={{ border: 0 }}
-                  allowFullScreen=""
+                  allowFullScreen={true}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
