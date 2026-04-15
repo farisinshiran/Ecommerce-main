@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, Heart, Share2, Bookmark, MoreHorizontal, Grid, List } from "lucide-react";
 import { WhatsAppIcon } from "./ui/whatsapp-icon";
-import coconutDrinkImg from "@/assets/bg.png";
+const coconutDrinkImg = "/bg.png";
 const drinkImg = "https://images.unsplash.com/photo-1765827620772-3129b91847b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800";
 const marketImg = "https://images.unsplash.com/photo-1539672663019-14678deb71f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800";
 const plantationImg = "https://images.unsplash.com/photo-1719406287028-6e0028e5d12a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800";
