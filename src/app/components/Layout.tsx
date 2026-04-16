@@ -88,13 +88,13 @@ function NavBar() {
         <div className="flex items-center gap-3">
           <span style={{ color: "#AEB784" }}>Tersedia di:</span>
           <a href="https://gofood.link/a/xUWXgHJ" target="_blank" rel="noopener noreferrer" className="w-7 h-7 rounded-lg flex items-center justify-center overflow-hidden hover:shadow-md transition-all transform hover:scale-110" style={{ backgroundColor: "#1A5231" }} title="Pesan via GoFood">
-            <img src="https://down-id.img.susercontent.com/file/sg-11134201-22100-9acxecz4lviv75" alt="GoFood" className="w-full h-full object-cover" />
+            <img src="https://down-id.img.susercontent.com/file/sg-11134201-22100-9acxecz4lviv75" alt="Pesan via GoFood" className="w-full h-full object-cover" />
           </a>
           <a href=" https://r.grab.com/g/6-20260331_225106_9430f67a73d34702a28595e2962b3c84_MEXMPS-6-CZM1JCNAJEU2JN" target="_blank" rel="noopener noreferrer" className="w-7 h-7 rounded-lg flex items-center justify-center overflow-hidden hover:shadow-md transition-all transform hover:scale-110" style={{ backgroundColor: "#52B788" }} title="Pesan via GrabFood">
-            <img src="https://i.pinimg.com/1200x/f9/c3/4e/f9c34ec979a505c7dd41124cb14fbc39.jpg" alt="GrabFood" className="w-full h-full object-cover" />
+            <img src="https://i.pinimg.com/1200x/f9/c3/4e/f9c34ec979a505c7dd41124cb14fbc39.jpg" alt="Pesan via GrabFood" className="w-full h-full object-cover" />
           </a>
           <a href="https://shopee.co.id/universal-link/now-food/shop/1121744?deep_and_deferred=1&shareChannel=copy_link" target="_blank" rel="noopener noreferrer" className="w-7 h-7 rounded-lg flex items-center justify-center overflow-hidden hover:shadow-md transition-all transform hover:scale-110" style={{ backgroundColor: "#F97316" }} title="Pesan via ShopeeFood">
-            <img src="https://i.pinimg.com/736x/66/1e/6c/661e6c8bb4e133784af3df07fba161c4.jpg" alt="ShopeeFood" className="w-full h-full object-cover" />
+            <img src="https://i.pinimg.com/736x/66/1e/6c/661e6c8bb4e133784af3df07fba161c4.jpg" alt="Pesan via ShopeeFood" className="w-full h-full object-cover" />
           </a>
           <a href="https://wa.me/6281321245161?text=Halo+Kelapa+Hijau+Bandung%2C+saya+ingin+memesan..." target="_blank" rel="noopener noreferrer" className="w-7 h-7 rounded-lg flex items-center justify-center overflow-hidden hover:shadow-md transition-all transform hover:scale-110" style={{ backgroundColor: "#25D366" }} title="Chat WhatsApp">
             <svg width="16" height="16" viewBox="1 0 1" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
@@ -158,7 +158,7 @@ function NavBar() {
           <div className="flex items-center gap-3">
             <button
               onClick={() => navigate("/keranjang")}
-              className="relative p-2.5 rounded-full transition-colors shadow-sm"
+              className="relative p-2.5 rounded-full transition-colors shadow-sm" 
               style={{ backgroundColor: "#41431B", color: "#F8F3E1" }}
             >
               <ShoppingCart size={18} />
@@ -206,13 +206,13 @@ function NavBar() {
             ))}
             <div className="mt-3 pt-3 border-t flex gap-2" style={{ borderColor: "#D5CEAB" }}>
           <a href="https://gofood.link/a/xUWXgHJ" target="_blank" rel="noopener noreferrer" className="w-7 h-7 rounded-lg flex items-center justify-center overflow-hidden hover:shadow-md transition-all transform hover:scale-110" style={{ backgroundColor: "#1A5231" }} title="Pesan via GoFood">
-            <img src="https://down-id.img.susercontent.com/file/sg-11134201-22100-9acxecz4lviv75" alt="GoFood" className="w-full h-full object-cover" />
+            <img src="https://down-id.img.susercontent.com/file/sg-11134201-22100-9acxecz4lviv75" alt="Pesan via GoFood" className="w-full h-full object-cover" />
           </a>
           <a href=" https://r.grab.com/g/6-20260331_225106_9430f67a73d34702a28595e2962b3c84_MEXMPS-6-CZM1JCNAJEU2JN" target="_blank" rel="noopener noreferrer" className="w-7 h-7 rounded-lg flex items-center justify-center overflow-hidden hover:shadow-md transition-all transform hover:scale-110" style={{ backgroundColor: "#52B788" }} title="Pesan via GrabFood">
-            <img src="https://i.pinimg.com/1200x/f9/c3/4e/f9c34ec979a505c7dd41124cb14fbc39.jpg" alt="GrabFood" className="w-full h-full object-cover" />
+            <img src="https://i.pinimg.com/1200x/f9/c3/4e/f9c34ec979a505c7dd41124cb14fbc39.jpg" alt="Pesan via GrabFood" className="w-full h-full object-cover" />
           </a>
           <a href="https://shopee.co.id/universal-link/now-food/shop/1121744?deep_and_deferred=1&shareChannel=copy_link" target="_blank" rel="noopener noreferrer" className="w-7 h-7 rounded-lg flex items-center justify-center overflow-hidden hover:shadow-md transition-all transform hover:scale-110" style={{ backgroundColor: "#F97316" }} title="Pesan via ShopeeFood">
-            <img src="https://i.pinimg.com/736x/66/1e/6c/661e6c8bb4e133784af3df07fba161c4.jpg" alt="ShopeeFood" className="w-full h-full object-cover" />
+            <img src="https://i.pinimg.com/736x/66/1e/6c/661e6c8bb4e133784af3df07fba161c4.jpg" alt="Pesan via ShopeeFood" className="w-full h-full object-cover" />
           </a>
             <a href="https://wa.me/6281321245161?text=Halo+Kelapa+Hijau+Bandung%2C+saya+ingin+memesan..." target="_blank" rel="noopener noreferrer" className="w-7 h-7 rounded-lg flex items-center justify-center overflow-hidden hover:shadow-md transition-all transform hover:scale-110" style={{ backgroundColor: "#25D366" }} title="Chat WhatsApp">
             <svg width="16" height="16" viewBox="1 0 1" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
@@ -236,7 +236,7 @@ function Footer() {
               <Leaf size={18} style={{ color: "#41431B" }} />
             </div>
             <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "1.1rem", color: "#F8F3E1" }}>
-              Kelapa Hijau Bandung
+              Kelapa Hijau Bandung 01
             </span>
           </div>
           <p className="text-sm mb-5 leading-relaxed" style={{ color: "#AEB784" }}>
@@ -274,13 +274,13 @@ function Footer() {
           </h4>
           <div className="flex gap-3">
             <a href="https://gofood.link/a/xUWXgHJ" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden hover:shadow-md transition-all transform hover:scale-110" style={{ backgroundColor: "#1A5231" }} title="GoFood">
-              <img src="https://down-id.img.susercontent.com/file/sg-11134201-22100-9acxecz4lviv75" alt="GoFood" className="w-full h-full object-cover" />
+              <img src="https://down-id.img.susercontent.com/file/sg-11134201-22100-9acxecz4lviv75" alt="Pesan via GoFood" className="w-full h-full object-cover" />
             </a>
             <a href=" https://r.grab.com/g/6-20260331_225106_9430f67a73d34702a28595e2962b3c84_MEXMPS-6-CZM1JCNAJEU2JN" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden hover:shadow-md transition-all transform hover:scale-110" style={{ backgroundColor: "#52B788" }} title="GrabFood">
-              <img src="https://i.pinimg.com/1200x/f9/c3/4e/f9c34ec979a505c7dd41124cb14fbc39.jpg" alt="GrabFood" className="w-full h-full object-cover" />
+              <img src="https://i.pinimg.com/1200x/f9/c3/4e/f9c34ec979a505c7dd41124cb14fbc39.jpg" alt="Pesan via GrabFood" className="w-full h-full object-cover" />
             </a>
             <a href="https://shopee.co.id/universal-link/now-food/shop/1121744?deep_and_deferred=1&shareChannel=copy_link" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden hover:shadow-md transition-all transform hover:scale-110" style={{ backgroundColor: "#F97316" }} title="ShopeeFood">
-              <img src="https://i.pinimg.com/736x/66/1e/6c/661e6c8bb4e133784af3df07fba161c4.jpg" alt="ShopeeFood" className="w-full h-full object-cover" />
+              <img src="https://i.pinimg.com/736x/66/1e/6c/661e6c8bb4e133784af3df07fba161c4.jpg" alt="Pesan via ShopeeFood" className="w-full h-full object-cover" />
             </a>
             <a href="https://wa.me/6281321245161?text=Halo+Kelapa+Hijau+Bandung%2C+saya+ingin+memesan..." target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden hover:shadow-md transition-all transform hover:scale-110" style={{ backgroundColor: "#25D366" }} title="Chat WhatsApp">
               <svg width="16" height="16" viewBox="1 0 1" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
@@ -317,7 +317,7 @@ function Footer() {
         className="border-t py-4 text-center text-xs"
         style={{ borderColor: "rgba(174,183,132,0.3)", color: "rgba(174,183,132,0.6)" }}
       >
-        © 2026 Kelapa Hijau Bandung
+        © 2026 Kelapa Hijau Bandung 01
       </div>
     </footer>
   );
