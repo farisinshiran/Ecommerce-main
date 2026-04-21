@@ -62,10 +62,15 @@ function NavBar() {
       <div 
         style={{ 
           backgroundColor: "#41431B",
-          maxHeight: scrolled ? "0px" : "80px",
+          maxHeight: scrolled ? "0px" : "60px",
           opacity: scrolled ? 0 : 1,
           overflow: "hidden",
-          transition: "all 0.4s ease-in-out",
+          transition: "all 0.5s",
+          transitionBehavior: "normal",
+          transitionDuration: "0.5s",
+          transitionTimingFunction: "ease",
+          transitionDelay: "0s",
+          transitionProperty: "all",
           paddingTop: scrolled ? 0 : "0.5rem",
           paddingBottom: scrolled ? 0 : "0.5rem"
         }} 
