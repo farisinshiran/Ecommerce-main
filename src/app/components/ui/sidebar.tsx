@@ -664,7 +664,7 @@ function SidebarMenuSubItem({
       {...props}
     />
   );
-}
+} 
 
 function SidebarMenuSubButton({
   asChild = false,
