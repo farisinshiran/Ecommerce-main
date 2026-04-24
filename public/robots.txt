@@ -1,3 +1,11 @@
+# Mengizinkan semua robot mesin pencari (Google, Bing, Yahoo, dll)
 User-agent: *
 Allow: /
+
+# Mencegah robot membaca halaman yang belum/tidak perlu diindeks (opsional, untuk persiapan fase 3)
+Disallow: /admin
+Disallow: /checkout
+Disallow: /private
+
+# Memberitahu lokasi pasti Peta Situs (Sangat Penting!)
 Sitemap: https://kelapahijaubandung.com/sitemap.xml
