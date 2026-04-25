@@ -221,7 +221,7 @@ export function OrderPage() {
                     href={app.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-2.5 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 text-white transition-opacity hover:opacity-90"
+                    className="w-full py-2.5 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 text-white transition-opacity hover:opacity-90 hover:shadow-md transform hover:scale-105"
                     style={{ backgroundColor: app.bgColor }}
                     onClick={(e) => e.stopPropagation()}
                   >
@@ -263,10 +263,10 @@ export function OrderPage() {
             href={`https://wa.me/${whatsappNumber}?text=Halo+Kelapa+Hijau+Bandung%2C+saya+ingin+memesan...`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-7 py-3 rounded-full font-semibold flex items-center gap-2 text-white shrink-0 transition-opacity hover:opacity-90"
+            className="px-7 py-3 rounded-full font-semibold flex items-center gap-2 text-white shrink-0 transition-opacity hover:opacity-90 hover:shadow-md transform hover:scale-105"
             style={{ backgroundColor: "#25D366" }}
           >
-            <WhatsAppIcon size={18} fill="white" />
+            {/* <WhatsAppIcon size={18} fill="white" /> */}
             Chat WhatsApp
           </a>
         </motion.div>
@@ -401,7 +401,7 @@ function AnimatedCard({ app }: { app: typeof deliveryApps[0] }) {
               href={app.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3.5 rounded-full font-semibold flex items-center gap-2 w-fit transition-opacity hover:opacity-90"
+              className="px-8 py-3.5 rounded-full font-semibold flex items-center gap-2 w-fit transition-opacity hover:opacity-90 hover:shadow-md transform hover:scale-105"
               style={{ backgroundColor: "white", color: app.bgColor }}
             >
               Pesan di {app.name} <ExternalLink size={16} />
