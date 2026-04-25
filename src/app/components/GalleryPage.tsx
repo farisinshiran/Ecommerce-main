@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { X, Heart, Share2, Bookmark, MoreHorizontal, Grid, List } from "lucide-react";
 import { WhatsAppIcon } from "./ui/whatsapp-icon";
 const coconutDrinkImg = "/bg.png";
@@ -126,6 +126,16 @@ export function GalleryPage() {
       ? galleryPosts
       : galleryPosts.filter((p) => p.tag === activeTag);
 
+// Tambahkan tipe data "grid" | "list" agar TypeScript paham
+  const getButtonClass = (mode: "grid" | "list") => {
+    const isActive = viewMode === mode;
+    const baseClass = "p-2.5 rounded-xl transition-colors border";
+    const activeClass = "bg-[#AEB784] border-[#AEB784] text-[#41431B]";
+    const inactiveClass = "bg-transparent border-[#AEB784]/40 text-[#AEB784] hover:bg-[#AEB784]/20";
+    
+    return `${baseClass} ${isActive ? activeClass : inactiveClass}`;
+  };
+
   return (
     <div style={{ backgroundColor: "#F8F3E1" }}>
       {/* Header */}
@@ -145,31 +155,23 @@ export function GalleryPage() {
                 @kelapahijaubandung01 · 366 kiriman
               </p>
             </div>
-            <div className="flex gap-2">
+<div className="flex gap-2">
+              {/* Tombol Grid */}
               <button
                 onClick={() => setViewMode("grid")}
-                className="p-2.5 rounded-xl transition-colors border"
-                style={{
-                  backgroundColor: viewMode === "grid" ? "#AEB784" : "transparent",
-                  borderColor: viewMode === "grid" ? "#AEB784" : "rgba(174,183,132,0.4)",
-                  color: viewMode === "grid" ? "#41431B" : "#AEB784",
-                }}
+                className={getButtonClass("grid")}
               >
                 <Grid size={16} />
               </button>
+              
+              {/* Tombol List */}
               <button
                 onClick={() => setViewMode("list")}
-                className="p-2.5 rounded-xl transition-colors border"
-                style={{
-                  backgroundColor: viewMode === "list" ? "#AEB784" : "transparent",
-                  borderColor: viewMode === "list" ? "#AEB784" : "rgba(174,183,132,0.4)",
-                  color: viewMode === "list" ? "#41431B" : "#AEB784",
-                }}
+                className={getButtonClass("list")}
               >
                 <List size={16} />
               </button>
-            </div>
-          </div>
+            </div>          </div>
 
           {/* Tag Filter */}
           <div className="flex gap-2 overflow-x-auto pb-1">
@@ -258,10 +260,14 @@ export function GalleryPage() {
                       <div className="text-xs font-medium" style={{ color: "#8A8A6A" }}>{post.date}</div>
                     </div>
                   </div>
-                  <button className="transition-colors" style={{ color: "#AEB784" }}>
+<button 
+                    type="button"
+                    aria-label="Opsi lainnya"
+                    className="transition-colors" 
+                    style={{ color: "#AEB784" }}
+                  >
                     <MoreHorizontal size={18} />
-                  </button>
-                </div>
+                  </button>                </div>
 
                 <img src={post.image} alt="" className="w-full aspect-video object-cover" />
 
@@ -281,11 +287,17 @@ export function GalleryPage() {
                         <WhatsAppIcon size={20} />
                         <span className="text-sm font-semibold">{post.comments}</span>
                       </button>
-                      <button className="transition-colors" style={{ color: "#8A8A6A" }}>
+<button 
+                        type="button"
+                        aria-label="Bagikan"
+                        className="transition-colors" 
+                        style={{ color: "#8A8A6A" }}
+                      >
                         <Share2 size={20} />
-                      </button>
-                    </div>
+                      </button>                    </div>
                     <button
+                      type="button"
+                      aria-label="Simpan" 
                       onClick={() => toggleSave(post.id)}
                       className="transition-colors"
                       style={{ color: post.saved ? "#F59E0B" : "#8A8A6A" }}

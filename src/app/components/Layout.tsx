@@ -2,7 +2,7 @@ import { Outlet, NavLink, useNavigate, useLocation } from "react-router";
 import { useState, useEffect } from "react";
 // import React from "react";
 // Impor komponen WA yang baru saja kita buat
-import FloatingWhatsApp from './floatingWhatsapp';
+import FloatingWhatsApp from './FloatingWhatsApp';
 
 import {
   Home,

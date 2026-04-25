@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   Minus,
   Plus,
@@ -147,14 +147,15 @@ export function CartPage() {
       {/* Header */}
       <div style={{ backgroundColor: "#41431B" }} className="py-8">
         <div className="max-w-6xl mx-auto px-4 flex items-center gap-4">
-          <button
+<button
+            type="button"
+            aria-label="Kembali ke menu"
             onClick={() => navigate("/menu")}
             className="p-2 rounded-xl transition-colors"
             style={{ color: "#AEB784" }}
           >
             <ArrowLeft size={20} />
-          </button>
-          <div>
+          </button>          <div>
             <h1
               style={{ fontFamily: "'Playfair Display', serif", color: "#F8F3E1", fontSize: "1.6rem", fontWeight: 700 }}
             >
@@ -245,24 +246,26 @@ export function CartPage() {
                         className="flex items-center gap-2 rounded-xl p-1"
                         style={{ backgroundColor: "#F8F3E1" }}
                       >
-                        <button
+<button
+                          type="button"
+                          aria-label="Kurangi jumlah"
                           onClick={() => updateQuantity(item.id, item.quantity - 1)}
                           className="w-7 h-7 rounded-lg flex items-center justify-center transition-colors"
                           style={{ color: "#41431B" }}
                         >
                           <Minus size={13} />
-                        </button>
-                        <span className="text-sm font-semibold w-6 text-center" style={{ color: "#41431B" }}>
+                        </button>                        <span className="text-sm font-semibold w-6 text-center" style={{ color: "#41431B" }}>
                           {item.quantity}
                         </span>
-                        <button
+<button
+                          type="button"
+                          aria-label="Tambah jumlah"
                           onClick={() => updateQuantity(item.id, item.quantity + 1)}
                           className="w-7 h-7 rounded-lg flex items-center justify-center transition-colors"
                           style={{ backgroundColor: "#41431B", color: "#F8F3E1" }}
                         >
                           <Plus size={13} />
-                        </button>
-                      </div>
+                        </button>                      </div>
                     </div>
                   </div>
                 </motion.div>
