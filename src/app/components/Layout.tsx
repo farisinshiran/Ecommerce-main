@@ -1,12 +1,11 @@
 import { Outlet, NavLink, useNavigate, useLocation } from "react-router";
 import { useState, useEffect } from "react";
-import React from "react";
+// import React from "react";
 // Impor komponen WA yang baru saja kita buat
 import FloatingWhatsApp from './floatingWhatsapp';
 
 import {
   Home,
-  UtensilsCrossed,
   ShoppingBag,
   Image,
   Info,
@@ -21,7 +20,7 @@ import {
   Palmtree,
 } from "lucide-react";
 import { useStore, StoreProvider } from "./store-context";
-import { WhatsAppIcon } from "./ui/whatsapp-icon";
+// import { WhatsAppIcon } from "./ui/whatsapp-icon";
 import { TikTokIcon } from "./ui/tiktok-icon";
 
 

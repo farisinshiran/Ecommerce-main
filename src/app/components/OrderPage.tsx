@@ -122,7 +122,7 @@ export function OrderPage() {
             <button
               key={app.id}
               onClick={() => setActiveApp(app.id)}
-              className="flex items-center gap-2.5 px-6 py-3 rounded-full border font-semibold transition-all text-sm shadow-sm"
+              className="flex items-center gap-2.5 px-6 py-3 rounded-full border font-semibold text-sm shadow-sm hover:shadow-md transition-all transform hover:scale-110"
               style={
                 activeApp === app.id
                   ? { backgroundColor: app.bgColor, color: "white", borderColor: app.bgColor }
@@ -130,20 +130,20 @@ export function OrderPage() {
               }
             >
               <span><div
-  className="w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-sm overflow-hidden"
-  style={{ backgroundColor: app.bgColor }}
->
-  {/* Cek apakah app.emoji adalah link (mulai dengan http) atau hanya teks */}
-  {app.emoji.startsWith("http") ? (
-    <img 
-      src={app.emoji} 
-      alt="App Icon" 
-      className="w-full h-auto object-cover" 
-    />
-  ) : (
-    <span>{app.emoji}</span>
-  )}
-</div></span>
+                className="w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-sm overflow-hidden"
+                style={{ backgroundColor: app.bgColor }}
+              >
+                {/* Cek apakah app.emoji adalah link (mulai dengan http) atau hanya teks */}
+                {app.emoji.startsWith("http") ? (
+                  <img
+                    src={app.emoji}
+                    alt="App Icon"
+                    className="w-full h-auto object-cover"
+                  />
+                ) : (
+                  <span>{app.emoji}</span>
+                )}
+              </div></span>
               <span>{app.name}</span>
             </button>
           ))}
@@ -181,21 +181,21 @@ export function OrderPage() {
                       className="w-11 h-11 rounded-xl flex items-center justify-center text-lg shadow-sm"
                       style={{ backgroundColor: app.bgColor }}
                     >
-<div
-  className="w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-sm overflow-hidden"
-  style={{ backgroundColor: app.bgColor }}
->
-  {/* Cek apakah app.emoji adalah link (mulai dengan http) atau hanya teks */}
-  {app.emoji.startsWith("http") ? (
-    <img 
-      src={app.emoji} 
-      alt="App Icon" 
-      className="w-full h-auto object-cover" 
-    />
-  ) : (
-    <span>{app.emoji}</span>
-  )}
-</div>                    </div>
+                      <div
+                        className="w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-sm overflow-hidden"
+                        style={{ backgroundColor: app.bgColor }}
+                      >
+                        {/* Cek apakah app.emoji adalah link (mulai dengan http) atau hanya teks */}
+                        {app.emoji.startsWith("http") ? (
+                          <img
+                            src={app.emoji}
+                            alt="App Icon"
+                            className="w-full h-auto object-cover"
+                          />
+                        ) : (
+                          <span>{app.emoji}</span>
+                        )}
+                      </div>                    </div>
                     <div>
                       <div style={{ fontFamily: "'Playfair Display', serif", color: "#41431B", fontWeight: 700, fontSize: "1rem" }}>
                         {app.name}
@@ -241,9 +241,9 @@ export function OrderPage() {
           className="mt-10 rounded-3xl p-7 md:p-10 border flex flex-col md:flex-row items-center gap-7"
           style={{ backgroundColor: "white", borderColor: "#E3DBBB" }}
         >
-            <div className="shrink-0">
-              <WhatsAppIcon size={49} fill="#25D366" item-center />
-            </div>
+          <div className="shrink-0">
+            <WhatsAppIcon size={49} fill="#25D366" item-center />
+          </div>
           <div className="flex-1 text-center md:text-left">
             <h3
               className="mb-2"
@@ -334,21 +334,21 @@ function AnimatedCard({ app }: { app: typeof deliveryApps[0] }) {
                 className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl"
                 style={{ backgroundColor: "rgba(255,255,255,0.2)" }}
               >
-<div
-  className="w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-sm overflow-hidden"
-  style={{ backgroundColor: app.bgColor }}
->
-  {/* Cek apakah app.emoji adalah link (mulai dengan http) atau hanya teks */}
-  {app.emoji.startsWith("http") ? (
-    <img 
-      src={app.emoji} 
-      alt="App Icon" 
-      className="w-full h-auto object-cover" 
-    />
-  ) : (
-    <span>{app.emoji}</span>
-  )}
-</div>              </div>
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-sm overflow-hidden"
+                  style={{ backgroundColor: app.bgColor }}
+                >
+                  {/* Cek apakah app.emoji adalah link (mulai dengan http) atau hanya teks */}
+                  {app.emoji.startsWith("http") ? (
+                    <img
+                      src={app.emoji}
+                      alt="App Icon"
+                      className="w-full h-auto object-cover"
+                    />
+                  ) : (
+                    <span>{app.emoji}</span>
+                  )}
+                </div>              </div>
               <div>
                 <h2
                   className="text-white"
