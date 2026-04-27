@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from "./app/App.tsx";
-import './index.css'
+import './styles/index.css'
 import * as Sentry from "@sentry/react"; // 1. Impor Sentry
 
 // 2. Inisialisasi Sentry (Masukkan kode DSN milik Anda di sini)
