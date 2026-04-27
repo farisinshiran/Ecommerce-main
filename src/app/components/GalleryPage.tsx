@@ -160,6 +160,7 @@ export function GalleryPage() {
               <button
                 onClick={() => setViewMode("grid")}
                 className={getButtonClass("grid")}
+                aria-label="Tampilan Grid"
               >
                 <Grid size={16} />
               </button>
@@ -167,6 +168,7 @@ export function GalleryPage() {
               {/* Tombol List */}
               <button
                 onClick={() => setViewMode("list")}
+                aria-label="Tampilan List"
                 className={getButtonClass("list")}
               >
                 <List size={16} />
@@ -363,6 +365,7 @@ export function GalleryPage() {
                   </div>
                   <button
                     onClick={() => setSelectedPost(null)}
+                    aria-label="Tutup"
                     className="transition-colors"
                     style={{ color: "#8A8A6A" }}
                   >
@@ -395,6 +398,7 @@ export function GalleryPage() {
                       </div>
                     </div>
                     <button
+                      aria-label="Simpan"
                       onClick={() => toggleSave(selectedPost.id)}
                       className="transition-colors"
                       style={{ color: selectedPost.saved ? "#F59E0B" : "#8A8A6A" }}

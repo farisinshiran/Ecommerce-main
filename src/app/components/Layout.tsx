@@ -6,6 +6,7 @@ import FloatingWhatsApp from './WidgetWA';
 import {
   Home,
   ShoppingBag,
+  UtensilsCrossed,
   Image,
   Info,
   ShoppingCart,
@@ -332,6 +333,8 @@ function Footer() {
 
 // INILAH FUNGSI LAYOUT UTAMA YANG BENAR
 export function Layout() {
+  const location = useLocation(); // 👈 2. Panggil fitur pendeteksi URL
+
   return (
     <StoreProvider>
       <div className="min-h-screen flex flex-col relative" style={{ backgroundColor: "#F8F3E1" }}>
@@ -340,8 +343,10 @@ export function Layout() {
           <Outlet />
         </main>
         <Footer />
-        {/* Tombol Floating WA dipanggil di sini, dijamin muncul di atas segalanya! */}
-        <FloatingWhatsApp />
+        
+        {/* 👇 3. Logika canggih: Tampilkan WA HANYA JIKA path BUKAN /keranjang */}
+        {location.pathname !== "/keranjang" && <FloatingWhatsApp />}
+        
       </div>
     </StoreProvider>
   );

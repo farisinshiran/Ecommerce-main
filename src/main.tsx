@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from "./app/App.tsx";
+import App from "./app/App.tsx"
 import './styles/index.css'
 import * as Sentry from "@sentry/react"; // 1. Impor Sentry
 
@@ -11,7 +11,7 @@ Sentry.init({
     Sentry.browserTracingIntegration(),
   ],
   // Melacak 100% dari transaksi untuk analisis performa
-  tracesSampleRate: 1.0, 
+  tracesSampleRate: 1.0,
 });
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
