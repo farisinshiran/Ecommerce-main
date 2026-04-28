@@ -2,7 +2,7 @@ import { Outlet, NavLink, useNavigate, useLocation } from "react-router";
 import { useState, useEffect } from "react";
 // import React from "react";
 // Impor komponen WA yang baru saja kita buat
-import FloatingWhatsApp from './WidgetWA';
+// import FloatingWhatsApp from './WidgetWA';
 import {
   Home,
   ShoppingBag,
@@ -115,7 +115,7 @@ function NavBar() {
         className="sticky top-0 z-50 shadow-sm border-b"
         style={{ backgroundColor: "#FEFDF8", borderColor: "#D5CEAB" }}
       >
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between relative">
           {/* Logo */}
           <button onClick={() => navigate("/")} className="flex items-center gap-2.5">
             <div
@@ -138,7 +138,7 @@ function NavBar() {
           </button>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-1 absolute left-1/2 transform -translate-x-1/2">
             {navItems.map((item) => (
               <NavLink
                 key={item.to}
@@ -164,7 +164,7 @@ function NavBar() {
 
           {/* Cart + Mobile Toggle */}
           <div className="flex items-center gap-3">
-            <button
+            {/* <button
               onClick={() => navigate("/keranjang")}
               className="relative p-2.5 rounded-full transition-colors shadow-sm" 
               style={{ backgroundColor: "#41431B", color: "#F8F3E1" }}
@@ -178,7 +178,7 @@ function NavBar() {
                   {totalItems}
                 </span>
               )}
-            </button>
+            </button> */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="md:hidden p-2 rounded-lg transition-colors"
@@ -344,8 +344,8 @@ export function Layout() {
         </main>
         <Footer />
         
-        {/* 👇 3. Logika canggih: Tampilkan WA HANYA JIKA path BUKAN /keranjang */}
-        {location.pathname !== "/keranjang" && <FloatingWhatsApp />}
+        {/* 👇 3. Logika canggih: Tampilkan WA HANYA JIKA path BUKAN /keranjang
+        {location.pathname !== "/keranjang" && <FloatingWhatsApp />} */}
         
       </div>
     </StoreProvider>

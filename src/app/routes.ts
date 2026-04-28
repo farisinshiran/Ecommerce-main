@@ -5,7 +5,7 @@ import { MenuPage } from "./components/MenuPage";
 import { OrderPage } from "./components/OrderPage";
 import { GalleryPage } from "./components/GalleryPage";
 import { AboutPage } from "./components/AboutPage";
-import { CartPage } from "./components/CartPage";
+// import { CartPage } from "./components/CartPage";
 
 export const router = createBrowserRouter([
   {
@@ -17,7 +17,7 @@ export const router = createBrowserRouter([
       { path: "pesan", Component: OrderPage },
       { path: "galeri", Component: GalleryPage },
       { path: "tentang", Component: AboutPage },
-      { path: "keranjang", Component: CartPage },
+      // { path: "keranjang", Component: CartPage },
     ],
   },
 ]);
